@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower&display=swap");
+:root {
+  --history-bg-color: grey;
+  --digit-btn-bg-color: #d3d3d3;
+  --label-color: yellow;
+  --display-bg-color: yellow;
+  --enter-btn-bg-color: rgb(173, 203, 221);
+  --calculator-padding: 15px;
+  --operationContainer-bg-color: rgb(179, 177, 177);
+}
+
+body {
+  font-family: "Lakki Reddy", cursive;
+  background: url(https://www.wprost.pl/_thumb/78/91/51da88198xx88344900ba79821ab.jpeg)
+    no-repeat;
+  /* gradient start */
+  background: -moz-linear-gradient(-45deg, rgba(219, 159, 68, 1) 100%);
+  background: -webkit-gradient(
+    left top,
+    right bottom,
+    color-stop(0%, rgba(243, 226, 199, 1)),
+    color-stop(100%, rgba(219, 159, 68, 1))
+  );
+  background: -webkit-linear-gradient(-45deg, rgba(219, 159, 68, 1));
+  background: -o-linear-gradient(-45deg, rgba(219, 159, 68, 1));
+  background: -ms-linear-gradient(-45deg, rgba(219, 159, 68, 1));
+  background: linear-gradient(135deg, rgba(219, 159, 68, 1));
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', endColorstr='#db9f44', GradientType=1 );
+  /* gradient end */
+}
+
+h1 {
+  color: red;
+  margin-left: 430px;
+  font-family: "Lilita One", cursive;
+  display: inline;
+  text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5,
+    -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5,
+    -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+}
+
+i {
+  color: red;
+}
+
+h2 {
+  color: red;
+  margin-left: 380px;
+  font-family: "Indie Flower", cursive;
+}
+
+label {
+  background: red;
+  color: var(--label-color);
+}
+
+#calculator {
+  font-size: 31.3px;
+  float: left;
+  background: url(http://api.thumbr.it/whitenoise-361x370.png?background=434a3eff&noise=626262&density=100&opacity=32);
+  width: 400px;
+  /* margin-left: 300px; */
+  margin-bottom: 30px;
+  height: 560px;
+  padding: var(--calculator-padding);
+}
+
+#display {
+  padding-right: 10px;
+  padding-top: 5px;
+  text-align: right;
+  background-color: var(--display-bg-color);
+  height: 50px;
+}
+
+#digitContainer {
+  text-align: center;
+  /*   background: lightblue;
+ */
+  height: 270px;
+  margin-top: var(--calculator-padding);
+  margin-bottom: var(--calculator-padding);
+  padding: 8px 20px;
+  padding-bottom: 17px;
+}
+
+#enterBtn {
+  float: right;
+  padding: 7.2px 0;
+  padding-bottom: 13px;
+  width: 61.2%;
+  margin-top: 10px;
+  margin-right: 5px;
+  height: 35px;
+  background: var(--enter-btn-bg-color);
+}
+
+#operationContainer {
+  background: var(--operationContainer-bg-color);
+}
+
+#history {
+  background: var(--history-bg-color);
+  float: left;
+  width: 430px;
+  height: 590px;
+}
+
+#historyCheckbox {
+  margin-left: 610px;
+}
+
+.btnShadow {
+  -webkit-box-shadow: 12px 11px 8px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 12px 11px 8px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 12px 11px 8px -8px rgba(0, 0, 0, 0.75);
+}
+
+.digitRow {
+  height: 67.5px;
+}
+
+.digitBtnColor {
+  background: var(--digit-btn-bg-color);
+}
+
+.digitBtn {
+  padding: 11.2px 0;
+  /*  border: solid black 1px; */
+  width: 32.8%;
+  float: left;
+}
+
+.operationBtn {
+  text-align: center;
+  border: solid black 1px;
+}
+
+.roundedCorners {
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0px solid #000000;
+}

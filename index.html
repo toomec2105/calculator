@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <script>
+      //alert("Geting a script can block the page")
+    </script>
+    <!--<style>
+            @import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+            </style>-->
+    <section>
+      <header>
+        <h1>Cat Calculator</h1>
+        <i class="fas fa-cat fa-3x"></i>
+        <h2>My first larger web project</h2>
+      </header>
+      <main>
+        <div>
+          <input
+            type="checkbox"
+            name="history"
+            value="historyOn"
+            id="historyCheckbox"
+          />
+          <label for="historyCheckbox">Show history</label>
+        </div>
+        <div id="calculator" class="roundedCorners">
+          <div id="display"></div>
+          <div id="digitContainer" class="digitBtnColor">
+            <div class="digitRow" id="firstRow">
+              <div class="digitBtn btnShadow" id="0">0</div>
+              <div class="btnShadow" id="enterBtn">ENTER</div>
+            </div>
+            <div class="digitRow" id="secondRow">
+              <div class="digitBtn btnShadow" id="1">1</div>
+              <div class="digitBtn btnShadow" id="2">2</div>
+              <div class="digitBtn btnShadow" id="3">3</div>
+            </div>
+            <div class="digitRow" id="thirdRow">
+              <div class="digitBtn btnShadow" id="4">4</div>
+              <div class="digitBtn btnShadow" id="5">5</div>
+              <div class="digitBtn btnShadow" id="6">6</div>
+            </div>
+            <div class="digitRow" id="fourthRow">
+              <div class="digitBtn btnShadow" id="7">7</div>
+              <div class="digitBtn btnShadow" id="8">8</div>
+              <div class="digitBtn btnShadow" id="9">9</div>
+            </div>
+          </div>
+          <div id="operationContainer">
+            <div class="operationBtn" id="add">+</div>
+            <div class="operationBtn" id="subtract">-</div>
+            <div class="operationBtn" id="multiply">*</div>
+            <div class="operationBtn" id="divide">/</div>
+          </div>
+        </div>
+        <div id="history" class="roundedCorners"></div>
+      </main>
+    </section>
+
+    <!--prevent script from blocking the loading of HTML content-->
+    <script
+      src="https://kit.fontawesome.com/28a6eea6ba.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="calculator.js"></script>
+  </body>
+</html>
