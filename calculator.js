@@ -7,8 +7,8 @@ let display = document.getElementById("display");
 let historyCheckbox = document.getElementById("historyCheckbox");
 let historyDisplay = document.getElementById("history");
 //other variables
-let num1 = null;
-let num2 = null;
+let num1 = "";
+let num2 = "";
 let operator = null;
 let records = [];
 let history = ""; //"<h3>History : </h3>";
@@ -17,19 +17,26 @@ let history = ""; //"<h3>History : </h3>";
 //Event Listeners
 digitContainer.addEventListener("click", function fn(e) {
   if (e.target.id === "enterBtn") {
+    parseInt(num1, 10);
+    parseInt(num2, 10);
     calculate();
     return;
   }
-  if (num1 == null) {
+  if (operator == null) {
     //console.log(typeof e.target.id); String
-    num1 = parseInt(e.target.id, 10);
+    console.log(num1);
+  
+    num1 += e.target.id;
+    console.log("i am adding to num1");
     //console.log(typeof x);  Number
   } else {
-    num2 = parseInt(e.target.id, 10);
+    num2 += e.target.id;
+    console.log("i am adding to num1");
   }
 });
 
 operationContainer.addEventListener("click", function fn(e) {
+  
   operator = e.target.id;
 });
 
@@ -82,8 +89,8 @@ function calculate() {
 
 //helpers
 function clearData() {
-  num1 = null;
-  num2 = null;
+  num1 = "";
+  num2 = "";
   operator = null;
 }
 
