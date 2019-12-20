@@ -66,6 +66,10 @@ function calculate() {
       result = Math.pow(num1, num2);
       symbol = "^";
       break;
+      case "log":
+      result = getBaseLog(num1, num2);
+      symbol = "log";
+      break;
   }
 
   let record = createRecord(num1, num2, symbol, result);
@@ -118,4 +122,7 @@ function render(result, record) {
   if (historyCheckbox.checked == true) {
   historyDisplay.innerHTML = history;
   }
+}
+function getBaseLog(num1, num2) {
+  return Math.log(num2) / Math.log(num1);
 }
