@@ -114,7 +114,7 @@ function createRecordString() {
       " " +
       records[i].num2 +
       " = " +
-      records[i].result;
+      Number(records[i].result).toFixed(2);
     console.log(recordsString);
   }
   return recordsString;
@@ -123,7 +123,7 @@ function createRecordString() {
 function render(result, record) { 
   if (record.includes("null") == false && record.includes("undefined") == false){
     history += "<p>" + record + "</p>";
-    display.innerHTML = result;
+    display.innerHTML = result.toFixed(2);
   }
   
   if (historyCheckbox.checked == true) {
