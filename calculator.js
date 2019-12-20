@@ -62,6 +62,10 @@ function calculate() {
       result = num1 / num2;
       symbol = "/";
       break;
+      case "power":
+      result = Math.pow(num1, num2);
+      symbol = "^";
+      break;
   }
 
   let record = createRecord(num1, num2, symbol, result);

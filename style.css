@@ -133,6 +133,8 @@ label {
 
 .operationBtn {
   text-align: center;
+  width: 48%;
+  display: inline-block;
   border: solid black 1px;
 }
 
