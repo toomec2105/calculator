@@ -1,0 +1,28 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "calculator.js",
+  "scripts": {
+    "build": "parcel build index.html",
+    "start": "parcel index.html",
+    "build2": "npx parcel build src/index.html",
+    "start2": "npx parcel src/index.html",
+    "start-node": "npx parcel build src/index.js --target node && node dist/index.js",
+    "deploy": "npx gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toomec2105/calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toomec2105/calculator/issues"
+  },
+  "homepage": "https://github.com/toomec2105/calculator#readme",
+  "dependencies": {
+    "gh-pages": "^2.2.0",
+    "parcel-bundler": "^1.12.4"
+  }
+}
