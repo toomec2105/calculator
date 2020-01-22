@@ -17,8 +17,6 @@ let history = ""; //"<h3>History : </h3>";
 //Event Listeners
 digitContainer.addEventListener("click", function fn(e) {
   if (e.target.id === "enterBtn") {
-    parseInt(num1, 10);
-    parseInt(num2, 10);
     calculate();
     return;
   }
@@ -27,11 +25,13 @@ digitContainer.addEventListener("click", function fn(e) {
     console.log(num1);
   
     num1 += e.target.id;
+    display.innerHTML = num1;
     console.log("i am adding to num1");
     //console.log(typeof x);  Number
   } else {
     num2 += e.target.id;
     console.log("i am adding to num1");
+    display.innerHTML = num2;
   }
 });
 
@@ -52,6 +52,8 @@ historyCheckbox.addEventListener("click", function fn(e) {
 function calculate() {
   let result;
   let symbol;
+  num1 = parseInt(num1, 10);
+  num2 = parseInt(num2, 10);
   switch (operator) {
     case "add":
       result = num1 + num2;
