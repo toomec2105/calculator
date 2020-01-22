@@ -239,7 +239,7 @@ function createRecordString() {
 function render(result, record) {
   if (record.includes("null") == false && record.includes("undefined") == false) {
     history += "<p>" + record + "</p>";
-    display.innerHTML = result.toFixed(2);
+    display.innerHTML = parseInt(result, 10).toFixed(2);
   }
 
   if (historyCheckbox.checked == true) {
@@ -278,7 +278,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39309" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35475" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

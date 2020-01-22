@@ -125,7 +125,7 @@ function createRecordString() {
 function render(result, record) { 
   if (record.includes("null") == false && record.includes("undefined") == false){
     history += "<p>" + record + "</p>";
-    display.innerHTML = result.toFixed(2);
+    display.innerHTML = parseInt(result, 10).toFixed(2);
   }
   
   if (historyCheckbox.checked == true) {
